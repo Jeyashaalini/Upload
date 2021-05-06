@@ -65,7 +65,7 @@ public class UploadService {
 	}
 
 
-	public ResponseEntity<Upload> deleteUpload(long id) {
+	public ResponseEntity<Upload> deleteUpload(int id) {
 		try {
 			Optional<Upload> uploadData = uploadRepository.findById(id);
 			if(uploadData.isPresent()) {
@@ -79,7 +79,7 @@ public class UploadService {
 	}
 
 
-	public ResponseEntity<Upload> updateUpload(long id, Upload upload) {
+	public ResponseEntity<Upload> updateUpload(int id, Upload upload) {
 		try {
 			Optional<Upload> uploadData = uploadRepository.findById(id);
 			if(uploadData.isPresent()) {

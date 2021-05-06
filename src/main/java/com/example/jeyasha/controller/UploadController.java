@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.jeyasha.model.Upload;
 import com.example.jeyasha.services.UploadService;
 
-@CrossOrigin (origins="http://localhost:8081")
+@CrossOrigin (origins="http://localhost:8080")
 @RestController
 @RequestMapping(value = "/upload")
 public class UploadController {

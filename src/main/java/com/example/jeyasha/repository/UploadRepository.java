@@ -11,7 +11,7 @@ import com.example.jeyasha.model.Upload;
 
 
 @Repository
-public interface UploadRepository extends MongoRepository<Upload, Long>{
+public interface UploadRepository extends MongoRepository<Upload, Integer>{
 	
 	
 	@Query("{$or: [ { 'title': { $regex: ?0 , $options: 'i' } }, { 'artistName':{ $regex: ?0, $options: 'i' } },{ 'medium':{ $regex: ?0, $options: 'i' } },{ 'category':{ $regex: ?0, $options: 'i' } },{ 'description': { $regex: ?0 , $options: 'i' } } ]}")
